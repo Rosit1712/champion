@@ -1,0 +1,34 @@
+nav {
+    background-color: #7579e7;
+}
+h3,
+.tabs .tab a {
+    color: #7579e7;
+  }
+  
+.tabs .tab a:hover {
+    background-color: #b9fffc;
+    color:#7579e7;
+}
+.tabs .tab a.active, 
+.tabs .tab a:focus.active {
+    background-color: #9ab3f5;
+    color: white;
+}
+.tabs .indicator {
+    background-color:#7579e7;
+}
+.img-center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+#match .position img ,
+#scheduled img ,
+#savedsche img
+{
+    width: 40px;
+}
+.position {
+    padding: .8rem;
+}
