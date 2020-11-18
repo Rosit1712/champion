@@ -340,8 +340,6 @@ function showSche(data) {
     btnAdd.forEach(el => {
         document.getElementById(el.id).addEventListener('click', () => {
             added(parseInt(el.id));
-            document.getElementById(el.id).innerHTML = `<i class="small material-icons">check</i>`;
-            document.getElementById(el.id).removeEventListener('click', () => console.log('terhapus'));
             document.getElementById(el.id).removeAttribute('id');
 
         });
