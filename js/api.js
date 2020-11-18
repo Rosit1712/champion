@@ -11,7 +11,7 @@ const ENDTEAM = `${BASE_URL}competitions/${LEAGUE_ID}/teams`;
 const month = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"];
 const days = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
 // let homeLoad = document.getElementById('homeStandings');
-// homeLoad.innerHTML = `<img src="/icon/loading.gif">`;
+// homeLoad.innerHTML = `<img src="icon/loading.gif">`;
 
 const fetchAPI = url => {
     return fetch(url, {
@@ -52,7 +52,7 @@ fetchAPI(ENDTEAM)
         console.log(error);
     });
 function getGroup() {
-    document.getElementById('homeStandings').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('homeStandings').innerHTML = `<img src="icon/loading.svg" class="img-center">`;
     if ("caches" in window) {
         caches.match(ENDPOINT_COMPETITION)
             .then(response => {
@@ -65,7 +65,7 @@ function getGroup() {
                 }
             })
     }
-    document.getElementById('homeStandings').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('homeStandings').innerHTML = `<img src="icon/loading.svg" class="img-center">`;
     fetchAPI(ENDPOINT_COMPETITION)
         .then(data => {
             document.getElementById('homeStandings').innerHTML = ``;
@@ -116,7 +116,7 @@ function showGroup(data) {
 }
 
 function getScore() {
-    document.getElementById('topscore').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('topscore').innerHTML = `<img src="icon/loading.svg" class="img-center">`;
     fetchAPI(ENDPOINT_CL)
         .then(data => {
             document.getElementById('topscore').innerHTML = ``;
@@ -160,7 +160,7 @@ function showScore(data) {
 }
 let scheduled;
 function getMatchRes() {
-    document.getElementById('match').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('match').innerHTML = `<img src="icon/loading.svg" class="img-center">`;
     if ("caches" in window) {
         caches.match(ENDPOINT_MATCH)
             .then(response => {
@@ -184,7 +184,7 @@ function getMatchRes() {
 }
 
 function getMatchSche() {
-    document.getElementById('scheduled').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('scheduled').innerHTML = `<img src="icon/loading.svg" class="img-center">`;
     if ("caches" in window) {
         caches.match(ENDPOINT_SCHE)
             .then(response => {
