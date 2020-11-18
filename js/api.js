@@ -52,7 +52,7 @@ fetchAPI(ENDTEAM)
         console.log(error);
     });
 function getGroup() {
-    document.getElementById('homeStandings').innerHTML = `<img src="/icon/loading.svg" class="img-center">`;
+    document.getElementById('homeStandings').innerHTML = `<img src="./icon/loading.svg" class="img-center">`;
     if ("caches" in window) {
         caches.match(ENDPOINT_COMPETITION)
             .then(response => {
