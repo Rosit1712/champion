@@ -340,8 +340,7 @@ function showSche(data) {
     btnAdd.forEach(el => {
         document.getElementById(el.id).addEventListener('click', () => {
             added(parseInt(el.id));
-            document.getElementById(el.id).removeAttribute('id');
-
+            document.getElementById(el.id).remove();
         });
     });
 }
