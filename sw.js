@@ -31,7 +31,7 @@ workbox.precaching.precacheAndRoute([
 });
 
 workbox.routing.registerRoute(
-    new RegExp('/pages/'),
+    new RegExp('pages/'),
     workbox.strategies.staleWhileRevalidate({
         cacheName: 'pages',
     })
