@@ -2,7 +2,7 @@
   "name": "ChampYou",
   "short_name": "CY",
   "description": "Champions League Football Apps",
-  "start_url": "/index.html",
+  "start_url": "index.html",
   "display": "standalone",
   "background_color": "#7579e7",
   "theme_color": "#7579e7",
