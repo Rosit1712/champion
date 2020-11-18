@@ -83,8 +83,6 @@ workbox.routing.registerRoute(
 
     const options = {
       body: body,
-      icon: 'icon/trophy_96.png',
-      vibrate: [100, 50, 100],
       data: {
         dateOfArrival: Date.now(),
         primaryKey: 1
